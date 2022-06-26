@@ -4,7 +4,6 @@
     font-weight: 400;
     src: local('Be Vietnam Regular'), url('BeVietnam-Regular.woff') format('woff');
     }
-    
 
     @font-face {
     font-family: 'Be Vietnam';
@@ -12,7 +11,7 @@
     font-weight: 500;
     src: local('Be Vietnam Medium'), url('BeVietnam-Medium.woff') format('woff');
     }
-    
+
     @font-face {
         font-family: 'Be Vietnam';
         font-style: normal;
@@ -26,12 +25,11 @@
     font-weight: 700;
     src: local('Be Vietnam Bold'), url('BeVietnam-Bold.woff') format('woff');
     }
-    
-
+        
     @font-face {
         font-family: 'Be Vietnam';
         font-style: normal;
         font-weight: 900;
         src: local('Be Vietnam Extrabold'), url('BeVietnam-ExtraBold.woff') format('woff');
         }
-        
+

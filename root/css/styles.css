@@ -1,7 +1,7 @@
 body {
     align-items: center;
     background-image: url(../img/bg-tablet-pattern.svg), url(../img/bg-tablet-pattern.svg);
-    background-position-x: 70px, 240px;
+    background-position-x: 70px, 245px;
     background-position-y: -90px, 515px;
     background-repeat: no-repeat, no-repeat;
     background-size: 420px, 300px;
@@ -14,7 +14,7 @@ body {
 }
 
 .main-header {
-    align-self: center;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -46,7 +46,7 @@ body {
 }
 
 .hero h1 {
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
     font-size: 40px;
     margin: 15px 0 0 0;
@@ -104,6 +104,7 @@ body {
     color: #232851;
     line-height: 150%;
     margin-bottom: 0px;
+    width: 70%;
 }
 
 .features .about-manage p {
@@ -216,6 +217,7 @@ color: #B9B9C1;
 width: 88%;
 line-height: 180%;
 text-align: center;
+font-weight: 600;
     }
 
 .opinions div .card-1, .opinions div .card-3 {
@@ -242,6 +244,10 @@ text-align: center;
 
 .get-started-banner {
     background-color: #F3613C;
+    background-image: url(../img/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 22.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,22 +281,30 @@ text-align: center;
     padding-top: 50px;
 }
 
+.main-footer form {
+    display: flex;
+    position: relative;
+}
 
 .main-footer form input {
-    width: 250px;
+    width: 235px;
     height: 44px;
     background-color: #FFFFFF;
     border-radius: 50px;
-    padding: 0;
+    padding: 0 0 0 15px;
     border: 0;
+    color: #F3603B;
+    font-weight: 500;
     }
 
 .main-footer form input::placeholder {
     font-weight: 600;
     font-size: 13.1806px;
     color: #A0A0A0;
-    padding-left: 20px;
+    padding-left: 10px;
     align-self: center;
+    position: relative;
+    top: -2px;
     }
 
 .main-footer form button {
@@ -303,7 +317,8 @@ text-align: center;
     color: #FFFFFF;
     padding: 0;
     border: 0;
-    margin-left: 6px;
+    margin-left: 9px;
+    cursor: pointer;
     }
 
 .main-footer .footer-nav-bar {
@@ -358,108 +373,301 @@ text-align: center;
     margin: 50px 0 30px 0;
 }
 
+/* Hover Functions */
 
+.main-header .nav-bar ul li :hover {
+    color:rgb(143, 148, 167);  
+}
 
+.get-started-button:hover {
+    background-color: #ec8c74;
+}
 
+.get-started-banner .get-started-button:hover {
+    background-color: #FFFFFF;
+    color: #e2a899;
+    box-shadow: 0px 0px 0px;
+    font-weight: 700;
+}
 
+.social-networks-nav a img:hover {
+    filter: invert(47%) sepia(21%) saturate(6013%) hue-rotate(2deg) brightness(98%) contrast(98%);
+}
 
+.main-footer .footer-nav-bar li :hover {
+    color: #F36B03;
+    }
 
+.main-footer form button:hover {
+    background-color: #ec8c74;
+}
 
+/* Invalid email format message */
 
+.error-email-message {
+    color: #F3603B;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    position: absolute;
+    left: 15px;
+    top: 55px;
+    display: none;
+}
 
+.main-footer form input:invalid + .error-email-message  {
+    display: block;
+}
 
+/* Desktop styles */
 
+@media (min-width: 769px) {
 
+    body {
+        background-position-x: 770px, -500px;
+        background-position-y: -170px, 1150px;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 850px, 850px;
+}
 
+    .main-header {
+        width: 77%;
+        margin-top: 75px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 376px) {
+    .main-header .logo {
+        width: 145.45px;
+    }
 
     .main-header .nav-bar {
         display: block;
     }
+
+    .main-header .nav-bar ul {
+        display: flex;
+        list-style-type: none;
+        font-size: 13px;
+        font-weight: 500;
+        color: #242E52;
+        gap: 28px;
+    }
+
     
     .main-header .get-started-button {
-        display: block;
+        display: flex;
     }
 
     .nav-bar :any-link {
-        text-decoration: none
+        text-decoration: none;
+        color: #242E52;
     }
 
     .icon-hamburger {
         display: none;
     }
 
+    .hero {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 77%;
+    }
+
+    .hero .illustration-intro {
+        width: 580px;
+        margin-top: 50px;
+        position: relative;
+        right: -20px;
+    }
+
+    .hero .left-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .hero h1 {
-        font-weight: 700;
+        font-size: 58px;
+        text-align: left;
+    }
+
+    .hero p {
+        font-size: 16.56px;
+        text-align: left;
+        color: #000000;
+        width: 68%;
+        margin-top: 28px;
+        font-weight: 500;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 77%;
+    }
+
+    .features .about-manage {
+        align-items: flex-start;
     }
 
     .features .about-manage h2 {
-        line-height: ;
-        font-weight: 700;
+        font-size: 36px;
+        text-align: left;
+        line-height: 41px;
     }
 
     .features .about-manage p {
         font-size: 16px;
+        font-weight: 500;
+        color: #000000;
+        text-align: left;
+        line-height: 24.18px;
+        width: 50%;
+        margin-top: 36px;
+    }
+
+    .features-list {
+        width: 68%;
+    }
+
+    .features-list article div {
+        background-color: unset;
+        position: relative;
+        left: -86px;
+    }
+
+    .features-list article div span {
+        left: -23px;
     }
 
     .features-list article div h3 {
         color: #323851;
-        font-weight: 700;
     }
 
     .features-list article p {
-        line-height: ;
         font-size: 16px;
+        line-height: 25.52px;
+        margin-top: 10px;
+        width: 96%;
         }
+
+    .opinions {
+        margin-top: 62px;
+        width: 90%;
+    }
 
     .opinions h2 {
         font-size: 39.21px;
-        font-weight: 700;
+        margin-bottom: 109px;
     }
 
+    .opinions .articles {
+        flex-direction: row;
+    }
+
+    .opinions div .card {
+        display: flex;
+        height: 219px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
     .opinions div .card h3 {
         font-weight: 700;
     }
 
     .opinions div .card p {
         font-size: 16px;
-        line-height: ;
+        line-height: 156.6%;
+        width: 94%;
+    }
+
+    .opinions div .card-2 p {
+        width: 90%;
+    }
+
+    .opinions div .card-3 p {
+        width: 93%;
+    }
+
+    .opinions .circles {
+        display: none;
+    }
+
+    .opinions .get-started-button {
+        margin-top: 45px;
     }
 
     .get-started-banner {
         font-size: 40px;
         padding: 64px 0;
-    }
+        margin-top: 180px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 224px;
+        box-sizing: border-box;
+        background-image: url(../img/bg-simplify-section-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+        background-position-x: 260px;
+        }
 
     .get-started-banner h2 {
+        margin-left: 165px;
+        width: 35%;
+        text-align: left;
         font-weight: 700;
+    }
+
+    .get-started-banner a {
+        margin-right: 165px;
+    }
+
+    .main-footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 165px;
+        height: 247px;
+        box-sizing: border-box;
+        position: relative;
+        padding: 0 165px;
+    }
+
+    .main-footer .social-networks-nav-and-logo {
+        flex-direction: column-reverse;
+        gap: 64.24px;
+    }
+
+    .social-networks-nav {
+        gap: 13.33px;
+        margin-top: 0;
+    }
+
+    .social-networks-nav img {
+        width: 20px;
+    }
+
+    .main-footer .footer-nav-bar {
+        margin-top: 0;
+        gap: 220px;
+    }
+
+    .main-footer .footer-logo {
+        margin-top: 0;
+    }
+
+    .main-footer form {
+        align-self: flex-start;
+        margin-top: 56.29px;
     }
 
     .main-footer form input {
@@ -467,12 +675,20 @@ text-align: center;
         }
 
     .main-footer form button {
-    width: 63px;
+        width: 63px;
     }
 
     .main-footer nav li {
         font-size: 16px;
         }
+
+    .main-footer span {
+        position: absolute;
+        bottom: 20px;
+    }
+
+
+
 
 
 
