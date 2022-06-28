@@ -44,6 +44,7 @@ body {
 
 .hero .illustration-intro {
   width: 100%;
+  transition: all 0.5s;
 }
 
 .hero h1 {
@@ -81,6 +82,7 @@ body {
   justify-content: center;
   text-decoration: none;
   width: 134px;
+  transition: all 0.5s;
 }
 
 .features {
@@ -189,6 +191,7 @@ body {
   flex-direction: column;
   padding-bottom: 30px;
   position: relative;
+  transition: all 0.5s;
   width: 90%;
 }
 
@@ -259,6 +262,7 @@ body {
   font-weight: 600;
   text-align: center;
   width: 90%;
+  animation: Simplify-section 2s infinite alternate;
 }
 
 .get-started-banner .get-started-button {
@@ -315,6 +319,7 @@ body {
   margin-left: 9px;
   padding: 0;
   width: 80px;
+  transition: all 0.5s;
 }
 
 .main-footer .footer-nav-bar {
@@ -356,6 +361,7 @@ body {
 
 .social-networks-nav img {
   width: 33px;
+  transition: all 0.3s;
 }
 
 .social-networks-nav-and-logo .footer-logo {
@@ -377,12 +383,21 @@ body {
 
 /* Hover Functions */
 
+.hero .illustration-intro:hover {
+  transform: scale(1.05);
+}
+
 .main-header .nav-bar ul li :hover {
   color: rgb(143, 148, 167);
 }
 
+.opinions div .card:hover {
+  transform: scale(1.08)
+}
+
 .get-started-button:hover {
   background-color: #ec8c74;
+  transform: scale(1.10)
 }
 
 .get-started-banner .get-started-button:hover {
@@ -395,6 +410,7 @@ body {
 .social-networks-nav a img:hover {
   filter: invert(47%) sepia(21%) saturate(6013%) hue-rotate(2deg)
     brightness(98%) contrast(98%);
+    transform: scale(1.5)
 }
 
 .main-footer .footer-nav-bar li :hover {
@@ -403,6 +419,14 @@ body {
 
 .main-footer form button:hover {
   background-color: #ec8c74;
+  transform: scale(1.2);
+}
+
+/* Keyframes functions */
+
+@keyframes Simplify-section {
+  0% {transform: translateX(-15px)}
+  100% {transform: translateX(15px)}
 }
 
 /* Invalid email format message */
