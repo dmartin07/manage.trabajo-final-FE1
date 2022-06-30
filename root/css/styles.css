@@ -1,3 +1,5 @@
+/* BOBILE styles - made for 375px */
+
 body {
   align-items: center;
   background-image: url(../img/bg-tablet-pattern.svg),
@@ -366,6 +368,7 @@ body {
 
 .social-networks-nav-and-logo .footer-logo {
   margin-top: 50px;
+  transition: all 0.5s;
 }
 
 .main-footer span {
@@ -375,19 +378,103 @@ body {
   margin: 50px 0 30px 0;
 }
 
-/* Focus Functions */
+
+
+
+/*RESPONSIVE Menu*/
+
+.respmenu {
+  background: #fafafa;
+  border-radius: 5%;
+  box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
+  position: relative;
+  top: -15px;
+}
+
+.respmenu ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  transition: all 0.5s;
+  width: 180px;
+}
+
+.respmenu li {
+  list-style-type: none;
+}
+
+.respmenu a {
+  color: #242e52;
+  background: #fafafa;
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  gap: 28px;
+  max-width: 200px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+  box-sizing: border-box;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+}
+
+.respmenu .fa-bars, .respmenu .fa-times {
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.respmenu input[type="checkbox"] {
+  opacity: 0;
+}
+
+.respmenu nav {
+  disp
+}
+
+.respmenu input:checked ~ nav {
+  display: block;
+}
+
+.respmenu input:checked ~ .fa-bars {
+  display: none;
+}
+
+.respmenu input:not(:checked) ~ .fa-times {
+  display: none;
+}
+
+
+
+
+/* FOCUS Functions */
 
 .main-footer form input:focus {
     outline: none;
 }
 
-/* Hover Functions */
+
+
+
+/* HOVER Functions */
 
 .hero .illustration-intro:hover {
   transform: scale(1.05);
 }
 
 .main-header .nav-bar ul li :hover {
+  color: rgb(143, 148, 167);
+}
+
+.respmenu li :hover {
   color: rgb(143, 148, 167);
 }
 
@@ -422,14 +509,25 @@ body {
   transform: scale(1.2);
 }
 
-/* Keyframes functions */
+.social-networks-nav-and-logo .footer-logo:hover {
+  transform: skewX(-15deg);
+}
+
+
+
+
+
+/* KEYFRAMES functions */
 
 @keyframes Simplify-section {
   0% {transform: translateX(-15px)}
   100% {transform: translateX(15px)}
 }
 
-/* Invalid email format message */
+
+
+
+/* INVALID email format message */
 
 .error-email-message {
   color: #f3603b;
@@ -450,7 +548,12 @@ body {
 border: 2px solid #f3603b ;
 }
 
-/* Desktop styles */
+
+
+
+
+/* DESKTOP styles - made for 1440px.
+Til tablet-size (768px) it looks ok, so breakpoint is seated at 769px */
 
 @media (min-width: 769px) {
   body {
@@ -491,7 +594,7 @@ border: 2px solid #f3603b ;
     text-decoration: none;
   }
 
-  .icon-hamburger {
+  .respmenu {
     display: none;
   }
 

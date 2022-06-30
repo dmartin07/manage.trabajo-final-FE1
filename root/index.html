@@ -15,7 +15,7 @@
   <body>
 
     <!-- HEADER -->
-    <header class="main-header">
+    <header class="main-header" id="home">
       <img class="logo" src="./img/logo.svg" alt="logo">
       <nav class="nav-bar">
         <ul>
@@ -27,7 +27,20 @@
         </ul>
       </nav>
       <a class="get-started-button" href="">Get Started</a>
-      <img class="icon-hamburger"  src="./img/icon-hamburger.svg" alt="icon-hamburger">
+      <div class="respmenu">
+        <input type="checkbox">
+        <img class="fas fa-bars"  src="./img/icon-hamburger.svg" alt="icon-hamburger">
+        <img class="fas fa-times  " src="./img/icon-close.svg" alt="icon-close">
+        <nav>
+          <ul>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Community</a></li>
+          </ul>
+        </nav>
+      </div>
   </header>
 
     <!-- HERO -->
@@ -121,7 +134,7 @@
       </form>
       <nav class="footer-nav-bar">
         <ul>
-          <li><a href="./index.html">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="">Pricing</a></li>
           <li><a href="">Products</a></li>
           <li><a href="">About Us</a></li>
@@ -140,7 +153,7 @@
           <a href="https://www.pinterest.com/"><img src="./img/icon-pinterest.svg" alt="icon-pinterest"></a>
           <a href="https://www.instagram.com/"><img src="./img/icon-instagram.svg" alt="icon-instagram"></a>
         </nav>
-      <img class="footer-logo" src="./img/logo2.png" alt="logo2">
+      <a href="#home"><img class="footer-logo" src="./img/logo2.png" alt="logo2"></a>
       </div>
       <span>Copyright 2020. All Rights Reserved</span>
     </footer>
