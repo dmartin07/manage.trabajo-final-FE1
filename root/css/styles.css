@@ -437,7 +437,7 @@ body {
 }
 
 .respmenu nav {
-  disp
+  display: none;
 }
 
 .respmenu input:checked ~ nav {
