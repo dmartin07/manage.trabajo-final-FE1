@@ -1,4 +1,4 @@
-/* BOBILE styles - made for 375px */
+/* MOBILE styles - made for viewport width 375px */
 
 body {
   align-items: center;
@@ -540,19 +540,17 @@ body {
   top: 55px;
 }
 
-.main-footer form input:invalid + .error-email-message {
+.main-footer form input:not(:placeholder-shown):invalid + .error-email-message {
   display: block;
 }
 
-.main-footer form input:invalid {
-border: 2px solid #f3603b ;
+.main-footer form input:not(:placeholder-shown):invalid {
+  border: 2px solid #f3603b ;
 }
 
 
 
-
-
-/* DESKTOP styles - made for 1440px.
+/* DESKTOP styles - made for viewport width 1440px.
 Til tablet-size (768px) it looks ok, so breakpoint is seated at 769px */
 
 @media (min-width: 769px) {
