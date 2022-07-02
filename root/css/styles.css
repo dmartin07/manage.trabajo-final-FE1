@@ -1,4 +1,6 @@
-/* MOBILE styles - made for viewport width 375px */
+/* MOBILE STYLES - MADE FOR VIEWPORT WIDTH 375px */
+
+/* BODY STYLES */
 
 body {
   align-items: center;
@@ -15,6 +17,9 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
+/* HEADER STYLES */
 
 .main-header {
   align-items: center;
@@ -35,6 +40,82 @@ body {
 .main-header .get-started-button {
   display: none;
 }
+
+
+/*RESPONSIVE MENU STYLES*/
+
+.respmenu {
+  background: #fafafa;
+  border-radius: 5%;
+  box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
+  position: relative;
+  top: -15px;
+}
+
+.respmenu ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  transition: all 0.5s;
+  width: 180px;
+}
+
+.respmenu li {
+  list-style-type: none;
+}
+
+.respmenu a {
+  color: #242e52;
+  background: #fafafa;
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  gap: 28px;
+  max-width: 200px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+  box-sizing: border-box;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+}
+
+.respmenu .fa-bars, .respmenu .fa-times {
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.respmenu input[type="checkbox"] {
+  opacity: 0;
+}
+
+.respmenu nav {
+  display: none;
+}
+
+.respmenu input:checked ~ nav {
+  display: block;
+}
+
+.respmenu input:checked ~ .fa-bars {
+  display: none;
+}
+
+.respmenu input:not(:checked) ~ .fa-times {
+  display: none;
+}
+
+
+
+/* HERO SECTION STYLES */
 
 .hero {
   align-items: center;
@@ -86,6 +167,10 @@ body {
   width: 134px;
   transition: all 0.5s;
 }
+
+
+/* MAIN STYLES */
+/* FEATURES SECTION STYLES */
 
 .features {
   align-items: center;
@@ -167,6 +252,9 @@ body {
   width: 90%;
 }
 
+
+/* OPINIONS SECTION STYLES */
+
 .opinions {
   align-items: center;
   display: flex;
@@ -244,6 +332,9 @@ body {
   color: #f25f3a;
 }
 
+
+/* GET STARTED BANNER STYLES */
+
 .get-started-banner {
   align-items: center;
   background-color: #f3613c;
@@ -273,6 +364,9 @@ body {
   color: #f3603b;
   font-weight: 700;
 }
+
+
+/* FOOTER STYLES */
 
 .main-footer {
   align-items: center;
@@ -379,92 +473,14 @@ body {
 }
 
 
-
-
-/*RESPONSIVE Menu*/
-
-.respmenu {
-  background: #fafafa;
-  border-radius: 5%;
-  box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
-  position: relative;
-  top: -15px;
-}
-
-.respmenu ul {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  transition: all 0.5s;
-  width: 180px;
-}
-
-.respmenu li {
-  list-style-type: none;
-}
-
-.respmenu a {
-  color: #242e52;
-  background: #fafafa;
-  display: block;
-  font-size: 13px;
-  font-weight: 500;
-  gap: 28px;
-  max-width: 200px;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
-  box-sizing: border-box;
-  height: 25px;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 25px;
-}
-
-.respmenu .fa-bars, .respmenu .fa-times {
-  font-size: 25px;
-  pointer-events: none;
-}
-
-.respmenu input[type="checkbox"] {
-  opacity: 0;
-}
-
-.respmenu nav {
-  display: none;
-}
-
-.respmenu input:checked ~ nav {
-  display: block;
-}
-
-.respmenu input:checked ~ .fa-bars {
-  display: none;
-}
-
-.respmenu input:not(:checked) ~ .fa-times {
-  display: none;
-}
-
-
-
-
-/* FOCUS Functions */
+/* FOCUS FUNCTIONS */
 
 .main-footer form input:focus {
     outline: none;
 }
 
 
-
-
-/* HOVER Functions */
+/* HOVER FUNCTIONS */
 
 .hero .illustration-intro:hover {
   transform: scale(1.05);
@@ -514,10 +530,7 @@ body {
 }
 
 
-
-
-
-/* KEYFRAMES functions */
+/* KEYFRAMES FUNCTIONS */
 
 @keyframes Simplify-section {
   0% {transform: translateX(-15px)}
@@ -525,9 +538,7 @@ body {
 }
 
 
-
-
-/* INVALID email format message */
+/* INVALID EMAIL FORMAT MESSAGE */
 
 .error-email-message {
   color: #f3603b;
@@ -550,16 +561,23 @@ body {
 
 
 
-/* DESKTOP styles - made for viewport width 1440px.
+/* DESKTOP STYLES - MADE FOR VIEWPORT WIDTH 1440px.
 Til tablet-size (768px) it looks ok, so breakpoint is seated at 769px */
 
 @media (min-width: 769px) {
+
+
+  /* BODY STYLES */
+
   body {
     background-position-x: 770px, -500px;
     background-position-y: -170px, 1150px;
     background-repeat: no-repeat, no-repeat;
     background-size: 850px, 850px;
   }
+
+
+  /* HEADER STYLES */
 
   .main-header {
     margin-top: 75px;
@@ -592,9 +610,15 @@ Til tablet-size (768px) it looks ok, so breakpoint is seated at 769px */
     text-decoration: none;
   }
 
+
+  /* RESPONSIVE MENU STYLES */
+
   .respmenu {
     display: none;
   }
+
+
+  /* HERO SECTION STYLES */
 
   .hero {
     flex-direction: row-reverse;
@@ -629,11 +653,17 @@ Til tablet-size (768px) it looks ok, so breakpoint is seated at 769px */
     width: 68%;
   }
 
+
+  /* MAIN STYLES */
+
   main {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
+
+
+  /* FEATURES SECTION STYLES */
 
   .features {
     align-items: flex-start;
@@ -687,6 +717,9 @@ Til tablet-size (768px) it looks ok, so breakpoint is seated at 769px */
     width: 96%;
   }
 
+
+  /* OPINIONS SECTION STYLES */
+
   .opinions {
     margin-top: 62px;
     width: 90%;
@@ -734,6 +767,9 @@ Til tablet-size (768px) it looks ok, so breakpoint is seated at 769px */
     margin-top: 45px;
   }
 
+
+  /* GET STARTED BANNER STYLES */
+
   .get-started-banner {
     background-image: url(../img/bg-simplify-section-desktop.svg);
     background-repeat: no-repeat;
@@ -760,6 +796,9 @@ Til tablet-size (768px) it looks ok, so breakpoint is seated at 769px */
   .get-started-banner a {
     margin-right: 165px;
   }
+
+  
+  /* FOOTER STYLES */
 
   .main-footer {
     align-items: center;
